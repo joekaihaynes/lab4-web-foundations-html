@@ -3,190 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="./" target="_blank">
+    <base href="./">
     <link rel="icon" type="image/png" href="Evan.JPG">
     <title>Exploring HTML Elements</title>
 </head>
 
 <body>
+    <main>
+        <!-- Exploring HTML Elements -->
+        <header style ="text-align: center;">
+            <h1>HTML Kitchen Sink </h1>
+            <h2> By: Joe Haynes</h2>
+            <address>
+                You can contact the author at
+                <a href="mailto:joehaynes@sandiego.edu">Joehaynes@sandiego.edu</a> <br>
+                or at<br>
+                5998 Alcala Park Way, San Diego, CA, 92110
+            </address>
+        </header>
 
-<!-- Exploring HTML Elements -->
-<header style ="text-align: center;">
-    <h1>HTML Kitchen Sink </h1>
-    <h2> By: Joe Haynes</h2>
-    <address>
-        You can contact the author at
-        <a href="mailto:joehaynes@sandiego.edu">Joehaynes@sandiego.edu</a> <br>
-        or at<br>
-        5998 Alcala Park Way, San Diego, CA, 92110
-    </address>
-</header>
+        <hr>
 
-<hr>
+        <nav>
+            <h1>Index</h1>
+            <ul>
+                <li><a href="#element-test">Element Testing</a></li>
+                <li><a href="#attr-test">Attribute Testing</a></li>
+                <li><a href="#global-test">Global Attribute Testing</a></li>
+                <li><a href="#attr-element-test">Attribute by Element Testing</a></li>
+                <li><a href="#values-test">Attribute Values Testing</a></li>
+            </ul>
+        </nav>
 
-<h4> 1. List Testing </h4>
-<ul>
-    <li>Area</li>
-    <li>Audio</li>
-    <li>Address</li>
-</ul>
+        <h2 id="element-test">Element Testing</h2>
+        <h4> 1. List Testing </h4>
+        <ol>
+            <li>Area</li>
+            <li>Audio</li>
+            <li>Address</li>
+        </ol>
 
-<!-- Article Test -->
-<section>
-    <h4> 2. Article Testing </h4>
-    <article>
-        <h5>Sept 28 2025</h5>
-        <p>Code Code Code</p>
-    </article>
+        <!-- Article Test -->
+        <section>
+            <h4> 2. Article Testing </h4>
+            <article>
+                <h5>Sept 28 2025</h5>
+                <p>Code Code Code</p>
+            </article>
 
-    <article>
-        <h5>Sept 29 2025</h5>
-        <p>Eat Sleep Code Repeat </p>
-    </article>
+            <article>
+                <h5>Sept 29 2025</h5>
+                <p>Eat Sleep Code Repeat </p>
+            </article>
 
-    <article>
-        <h5>Sept 30 2025</h5>
-        <p>Go to Profs Class and code </p>
-    </article>
-    <footer>© 2025 Haynes</footer>
-</section>
+            <article>
+                <h5>Sept 30 2025</h5>
+                <p>Go to Profs Class and code </p>
+            </article>
+            <footer>© 2025 Haynes</footer>
+        </section>
 
-<h4>3. Map Testing</h4>
-<figure>
-    <img src="Redbutton.jpg" alt="Redbutton" usemap="#shapesmap">
-    <map name="shapesmap">
-        <area shape="circle" coords="109,109,80" alt="RedButton" href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">
-    </map>
-    <figcaption><b>DONT TOUCH THE RED BUTTON</b></figcaption>
-</figure>
+        <h4>3. Map Testing</h4>
+        <figure>
+            <img src="Redbutton.jpg" alt="Redbutton" usemap="#shapesmap">
+            <map name="shapesmap">
+                <area shape="circle" coords="109,109,80" alt="RedButton" href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">
+            </map>
+            <figcaption><b>DONT TOUCH THE RED BUTTON</b></figcaption>
+        </figure>
 
-<h4>4. Audio Testing</h4>
-<audio controls>
-    <source src="Luvsic.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-<br>
+        <h4>4. Audio Testing</h4>
+        <audio controls>
+            <source src="Luvsic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
 
-<h4>5. Anchor Testing</h4>
-<a href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">Click Me</a>
+        <h4>5. Anchor Testing</h4>
+        <a href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">Click Me</a>
 
-<h4>6. Abbreviation testing</h4>
-<p>
-    <abbr title="Hyper Text Markup Language">HTML</abbr> is a fundamental technology for creating web pages.
-    <abbr title ="JavaScript Object Notation" >JSON</abbr> is a lightweight data-interchange format.
-</p>
+        <h4>6. Abbreviation testing</h4>
+        <p>
+            <abbr title="Hyper Text Markup Language">HTML</abbr> is a fundamental technology for creating web pages.
+            <abbr title ="JavaScript Object Notation" >JSON</abbr> is a lightweight data-interchange format.
+        </p>
 
-<h4>7. Blockquote Testing</h4>
-<blockquote cite="https://myvalleynews.com/blog/2020/02/17/chaparral-high-school-njrotc-raises-scholarship-funds-in-honor-of-fallen-sailor/">
-    TEMECULA – Chaparral High Schools Naval JROTC hosted an all color guard drill meet Saturday, Jan. 25, in memory of fallen sailor Petty Officer 1st Class Carlos Sibayan. He was an alumnus of Chaparral,
-    who was killed on the <i>USS Fitzgerald</i> in a collision with a merchant ship off the coast of Japan June 17, 2017.Through the color guard meet,
-    Chaparral students and 10 local JROTC groups came together to honor his memory by hosting the drill meet and raising funds for a scholarship in his name.
-    His parents and brothers attended the drill meet to present the awards to the various w
-</blockquote>
+        <h4>7. Blockquote, mark, i Testing</h4>
+        <blockquote cite="https://myvalleynews.com/blog/2020/02/17/chaparral-high-school-njrotc-raises-scholarship-funds-in-honor-of-fallen-sailor/">
+            TEMECULA – <mark>Chaparral High Schools Naval JROTC </mark> hosted an all color guard drill meet Saturday, Jan. 25, in memory of fallen sailor Petty Officer 1st Class Carlos Sibayan. He was an alumnus of Chaparral,
+            who was killed on the <i>USS Fitzgerald</i> in a collision with a merchant ship off the coast of Japan June 17, 2017.Through the color guard meet,
+            Chaparral students and 10 local JROTC groups came together to honor his memory by hosting the drill meet and raising funds for a scholarship in his name.
+            His parents and brothers attended the drill meet to present the awards to the various w
+        </blockquote>
 
-<h4>8. Button test</h4>
-<button type="button">Click Me!</button>
-<br>
+        <h4>8. Button test</h4>
+        <button type="button">Click Me!</button>
+        <br>
 
-<h4>9. Table and caption testing</h4>
-<table>
-    <caption>
-        Genetic Traits
-    </caption>
-    <tr>
-        <td></td>
-        <th scope="col">B</th>
-        <th scope="col">b</th>
-    </tr>
-    <tr>
-        <th scope="row">B</th>
-        <td>BB</td>
-        <td>Bb</td>
-    </tr>
-    <tr>
-        <th scope="row">b</th>
-        <td>Bb</td>
-        <td>bb</td>
-    </tr>
-</table>
+        <h4>9. Table and caption testing</h4>
+        <table>
+            <caption>
+                Genetic Traits
+            </caption>
+            <tr>
+                <td></td>
+                <th scope="col">B</th>
+                <th scope="col">b</th>
+            </tr>
+            <tr>
+                <th scope="row">B</th>
+                <td>BB</td>
+                <td>Bb</td>
+            </tr>
+            <tr>
+                <th scope="row">b</th>
+                <td>Bb</td>
+                <td>bb</td>
+            </tr>
+        </table>
 
-<h4>10. Cite testing</h4>
-<cite>Anderson, B. (1983). Imagined communities: Reflections on the origins and spread of nationalism. Verso.</cite>
+        <h4>10. Cite testing</h4>
+        <cite>Anderson, B. (1983). Imagined communities: Reflections on the origins and spread of nationalism. Verso.</cite>
 
-<h4>11. Code testing</h4>
-<code>console.log("Hello world")</code>
+        <h4>11. Code testing</h4>
+        <code>console.log("Hello world")</code>
 
-<h4>12. ul, li, Data testing </h4>
-<ul>
-    <li><data value="10">King</data></li>
-    <li><data value="7">Touchdown</data></li>
-    <li><data value="2">Layup</data></li>
-</ul>
+        <h4>12. ul, li, Data testing </h4>
+        <ul>
+            <li><data value="10">King</data></li>
+            <li><data value="7">Touchdown</data></li>
+            <li><data value="2">Layup</data></li>
+        </ul>
 
-<h4>13. Lapel,Input, Datalist, Option Testing</h4>
-<label for="fruit">Choose a fruit: </label>
-<input list="fruits" id="fruit" name="fruit">
+        <h4>13. Lapel,Input, Datalist, Option Testing</h4>
+        <label for="fruit">Choose a fruit: </label>
+        <input list="fruits" id="fruit" name="fruit">
 
-<datalist id="fruits">
-    <option value="Apple">
-    <option value="Banana">
-    <option value="Orange">
-</datalist>
+        <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Orange">
+        </datalist>
 
-<h4>14. dl dt dd del ins testing</h4>
-<dl>
-    <dt>USD</dt>
-    <dd>University of <del>Spoiled Daughters</del> <ins>San Diego</ins></dd>
-    <dt>SDSU</dt>
-    <dd>San Diego State University</dd>
-</dl>
+        <h4>14. dl dt dd del ins testing</h4>
+        <dl>
+            <dt>USD</dt>
+            <dd>University of <del>Spoiled Daughters</del> <ins>San Diego</ins></dd>
+            <dt>SDSU</dt>
+            <dd>San Diego State University</dd>
+        </dl>
 
-<h4> 15. detail and summary testing </h4>
-<details>
-    <summary>Click it</summary>
-    Made you look
-</details>
+        <h4> 15. detail and summary testing </h4>
+        <details>
+            <summary>Click it</summary>
+            Made you look
+        </details>
 
-<h4>16. dfn testing</h4>
-<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+        <h4>16. dfn testing</h4>
+        <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
 
-<h4>17. dialog testing</h4>
-<dialog open>This is an open dialog window</dialog>
-<br>
+        <h4>17. dialog testing</h4>
+        <dialog open>This is an open dialog window</dialog>
+        <br>
 
-<h4>18. div and em testing</h4>
-<div style="border: 30px solid gold; padding: 10px; width: 200px;">
-    <h3><em>Treasure Chest</em></h3>
-    <p>Find the Key.</p>
-</div>
+        <h4>18. div and em testing</h4>
+        <div style="border: 30px solid gold; padding: 10px; width: 200px;">
+            <h3><em>Treasure Chest</em></h3>
+            <p>Find the Key.</p>
+        </div>
 
-<h4>19. form, fieldset, legend testing</h4>
-<form>
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
-    </fieldset>
-</form>
+        <h4>19. form, fieldset, legend testing</h4>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+            </fieldset>
+        </form>
 
-<h4>20. hgroup testing</h4>
-<hgroup>
-    <h1>Heading 1</h1>
-    <p>HEADING</p>
-</hgroup>
+        <h4>20. hgroup testing</h4>
+        <hgroup>
+            <h1>Heading 1</h1>
+            <p>HEADING</p>
+        </hgroup>
 
-<h4>21. iframe test</h4>
-<iframe
-        width = "500"
-        height = "500"
-        src="https://flappybird.io/"
-        title="flappybird"></iframe>
+        <h4>21. iframe test</h4>
+        <iframe
+                width = "500"
+                height = "500"
+                src="https://flappybird.io/"
+                title="flappybird"></iframe>
 
-<h4>22. kbd test</h4>
-<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+        <h4>22. kbd test</h4>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
 
-<h4>23. iframe test</h4>
+        <!-- Deprecated won't pass validator but fun to have -->
+        <h4>23. marquee test</h4>
+        <marquee> Catch me if you can! </marquee>
+
+        <h4>24. menu testing</h4>
+        <menu>
+            <li>Burger</li>
+            <li>Pizza</li>
+            <li>Hotdog</li>
+        </menu>
+
+        <h4>25. meter testing</h4>
+        <label for="volume"> Volume: </label>
+        <meter id ="volume" min ="0" max ="100" value = "70"></meter>
+
+        <h4>26. script and noscript testing</h4>
+        <script>
+            document.write("Hello World!")
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+
+        <h4>27. optgroup testing</h4>
+        <label for="beverages">Choose a beverage:</label>
+        <select id="beverages" name="beverages">
+            <optgroup label="Hot Drinks">
+                <option>Coffee</option>
+                <option>Tea</option>
+            </optgroup>
+            <optgroup label="Cold Drinks">
+                <option>Water</option>
+                <option>Juice</option>
+            </optgroup>
+        </select>
+
+        <h5>28. output testing</h5>
+        <form oninput="result.value = a.value * b.value">
+            <label for="a">Number A:</label>
+            <input type="number" id="a" name="a" value="1">
+
+            <label for="b">Number B:</label>
+            <input type="number" id="b" name="b" value="1">
+
+            <p>Product: <output name="result" for="a b">1</output></p>
+        </form>
 
 
+        <h2 id="attr-test">Attribute Testing</h2>
+        <h2 id="global-test">Global Attribute Testing</h2>
+        <h2 id="attr-element-test">Attribute by Element Testing</h2>
+        <h2 id="values-test">Attribute Values Testing</h2>
+    </main>
 </body>
 </html>
