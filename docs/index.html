@@ -6,6 +6,10 @@
     <base href="./">
     <link rel="icon" type="image/png" href="Evan.JPG">
     <title>Exploring HTML Elements</title>
+    <style>
+        h1{color:blue}
+        h4{color: steelblue}
+    </style>
 </head>
 
 <body>
@@ -25,7 +29,7 @@
         <hr>
 
         <nav>
-            <h1>Index</h1>
+            <h2>Index</h2>
             <ul>
                 <li><a href="#element-test">Element Testing</a></li>
                 <li><a href="#attr-test">Attribute Testing</a></li>
@@ -72,12 +76,16 @@
             <figcaption><b>DONT TOUCH THE RED BUTTON</b></figcaption>
         </figure>
 
-        <h4>4. Audio Testing</h4>
+        <h4>4. Audio and Video Testing</h4>
         <audio controls>
             <source src="Luvsic.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <br>
+        <video width="320" height="240" controls>
+            <source src="Luvsic(Pt2).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
         <h4>5. Anchor Testing</h4>
         <a href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">Click Me</a>
@@ -89,11 +97,11 @@
         </p>
 
         <h4>7. Blockquote, mark, i Testing</h4>
-        <blockquote cite="https://myvalleynews.com/blog/2020/02/17/chaparral-high-school-njrotc-raises-scholarship-funds-in-honor-of-fallen-sailor/">
-            TEMECULA – <mark>Chaparral High Schools Naval JROTC </mark> hosted an all color guard drill meet Saturday, Jan. 25, in memory of fallen sailor Petty Officer 1st Class Carlos Sibayan. He was an alumnus of Chaparral,
-            who was killed on the <i>USS Fitzgerald</i> in a collision with a merchant ship off the coast of Japan June 17, 2017.Through the color guard meet,
-            Chaparral students and 10 local JROTC groups came together to honor his memory by hosting the drill meet and raising funds for a scholarship in his name.
-            His parents and brothers attended the drill meet to present the awards to the various w
+        <blockquote cite="https://docs.google.com/document/d/15VgCLwUraYP-UmgVbxNGMPO2dpq-W8CXldRVuR6VyFI/edit?usp=sharing">
+            While often associated with enlightenment and education the printing press in the early Reformation was rapidly recognized as a powerful tool for shaping public opinion.<wbr>Together with painters like Lucas Cranach, Protestant reformers like Martin Luther created woodcuts like <i>Passional Christi und Antichristi</i> to contrast the humility of Christ with the corruption of the papacy.
+            In response, Catholic artists responded with critical images such as Luther with Seven Heads to defend Church iIdeology. These images reveal how both sides harnessed the printing press not simply to debate theology,
+            but to provoke emotion and mobilize the masses amid an increasingly polarized <em>religious landscape</em>.
+
         </blockquote>
 
         <h4>8. Button test</h4>
@@ -102,14 +110,17 @@
 
         <h4>9. Table and caption testing</h4>
         <table>
-            <caption>
-                Genetic Traits
-            </caption>
+            <caption>Genetic Traits</caption>
+
+            <thead>
             <tr>
-                <td></td>
+                <th></th>
                 <th scope="col">B</th>
                 <th scope="col">b</th>
             </tr>
+            </thead>
+
+            <tbody>
             <tr>
                 <th scope="row">B</th>
                 <td>BB</td>
@@ -120,7 +131,16 @@
                 <td>Bb</td>
                 <td>bb</td>
             </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+                <td colspan="3">Data represents combinations of dominant (B) and recessive (b) alleles.</td>
+            </tr>
+            </tfoot>
         </table>
+
+
 
         <h4>10. Cite testing</h4>
         <cite>Anderson, B. (1983). Imagined communities: Reflections on the origins and spread of nationalism. Verso.</cite>
@@ -208,9 +228,12 @@
             <li>Hotdog</li>
         </menu>
 
-        <h4>25. meter testing</h4>
+        <h4>25. meter and progress testing</h4>
         <label for="volume"> Volume: </label>
         <meter id ="volume" min ="0" max ="100" value = "70"></meter>
+        <br>
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
 
         <h4>26. script and noscript testing</h4>
         <script>
@@ -241,6 +264,92 @@
 
             <p>Product: <output name="result" for="a b">1</output></p>
         </form>
+
+        <h4>29. Picture testing</h4>
+        <picture>
+            <source srcset="Evan.JPG" >
+            <img src="Evan.JPG" alt="Evan's Picture">
+        </picture>
+
+        <h4>30. Pre testing</h4>
+        <pre> T H I S       is           White         space</pre>
+
+        <h4>31. q testing </h4>
+        <p>My favorite quote is <q>Learning never exhausts the mind.</q> — Leonardo da Vinci</p>
+
+        <h4>32. ruby, rp, rt testing </h4>
+        <ruby>
+            漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+
+        <h4>33. s testing</h4>
+        <p><s>Only 50 tickets left!</s></p>
+        <p>SOLD OUT!</p>
+
+       <h4>34. samp testing</h4>
+        <p> Message from computer:</p>
+        <p>
+            <samp>Keyboard not found <br>Press F1 to continue</samp>
+        </p>
+
+        <h4>35. Search Example</h4>
+        <form action="/search" method="get">
+            <label for="query">Search the site:</label>
+            <input type="search" id="query" name="q" placeholder="Type your query...">
+            <button type="submit">Search</button>
+        </form>
+
+        <h4>35 small testing</h4>
+        <p>This is some normal text.</p>
+        <p><small>This is some smaller text.</small></p>
+
+        <h4>36. span,strong, sub, sup testing </h4>
+        <p>My mother has <span style="color:brown">brown</span> eyes.</p>
+        <p> This is normal <strong>This is Strong</strong></p>
+        <p>This text contains <sub>subscript</sub> text.</p>
+        <p>This text contains <sup>superscript</sup> text.</p>
+
+        <h4>37. template testing</h4>
+        <button onclick="showContent()">Show hidden content</button>
+        <template> <h2>Evan</h2> <img src="Evan.JPG" alt="Evans smiling face" > </template>
+        <script>
+            function showContent() {
+                let temp = document.getElementsByTagName("template")[0];
+                let clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon); }
+        </script>
+
+        <h4>38. text area testing</h4>
+        <form>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h4>39. time tag and time script </h4>
+        <p>The meeting starts at <time datetime="2025-09-28T15:00">3:00 PM on September 28, 2025</time>.</p>
+        <p id="current-time"></p>
+
+        <script>
+            const now = new Date(); // get current date and time
+            document.getElementById("current-time").textContent = now.toString();
+        </script>
+
+
+
+
+        <h4>40. u testing</h4>
+        <p> This is an <u>underline</u></p>
+
+        <h4>41. var testing</h4>
+        <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+        <h4>42. custom element and data attributes  </h4>
+        <my-school data-location="San Diego, CA" data-type="University">University of San Diego</my-school>
+
+
+
+
 
 
         <h2 id="attr-test">Attribute Testing</h2>
