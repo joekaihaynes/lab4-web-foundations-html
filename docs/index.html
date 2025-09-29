@@ -348,12 +348,69 @@
         <my-school data-location="San Diego, CA" data-type="University">University of San Diego</my-school>
 
 
-
-
-
-
         <h2 id="attr-test">Attribute Testing</h2>
+        <h4>1. Accept testing </h4>
+        <label for="pdfUpload">Upload a PDF:</label>
+        <input type="file" id="pdfUpload" name="pdfUpload" accept=".pdf">
+
+        <h4>2. Autocomplete testing </h4>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="fname" autocomplete="given-name">
+
+        <h4>3. crossorigin testing </h4>
+        <audio controls crossorigin="anonymous">
+            <source src="Luvsic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h4>4.Dirname testing </h4>
+        <form action="/submit" method="get">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="username" dirname="username.dir">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h4>5. disables testing</h4>
+        <label for="names">First name:</label>
+        <input type="text" id="names" name="name" value="Joe" disabled>
+
+        <h4>6. Element timing example</h4>
+        <img src="Evan.JPG" alt="Evan image" elementtiming="evan-image">
+
+        <h4>max and min length testing</h4>
+        <label for="username">Username (max 10 chars):</label>
+        <input type="text" id="username" name="username" minlength ="5" maxlength="10">
+        <input type="submit" value="Submit">
+
+
+        <h4>multiple testing</h4>
+        <label for="files">Upload files:</label>
+        <input type="file" id="files" name="files" multiple>
+        <input type="submit" value="Submit">
+
+        <h4>pattern placeholder, required testing </h4>
+        <label for="zip">ZIP Code (5 digits):</label>
+        <input type="text" id="zip" name="zip" pattern="\d{5}" placeholder="e.g. 92110" required>
+
+        <h4>Readonly testing</h4>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="San Diego" readonly>
+
+        <h4>size testing</h4>
+        <label for="size">size 100:</label>
+        <input type="text" id="size" name="size" size="100">
+
+        <h4>step testing </h4>
+        <label for="steps">Steps:</label>
+        <input type="number" min="10" step="2" />
+
         <h2 id="global-test">Global Attribute Testing</h2>
+
+
+
+
+
         <h2 id="attr-element-test">Attribute by Element Testing</h2>
         <h2 id="values-test">Attribute Values Testing</h2>
     </main>
