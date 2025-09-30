@@ -53,6 +53,18 @@ lab4-web-foundation-html/
 ├── LICENSE.md
 └── README.md
 ```
+
+## Issues Encountered
+- While it was tempting to put many attributes/elements on one `<div>` for brevity, readability and maintainability improved when elements were spaced, indented, and semantically grouped.
+- Audio/Video worked in modern browsers, but compatibility depends on the format (`mp3`, `mp4`). Not all browsers handle all codecs equally.
+- Many attributes (e.g., `hidden`, `inert`, `dir`, `lang`) are subtle. They don’t visibly affect the page without certain conditions. 
+- accessibility attributes often have “invisible” benefits that are critical for compliance and inclusivity.
+
+## How to Use
+1. Open `index.html` in any modern web browser.
+2. Navigate via the built-in `<nav>` index links to jump between element demonstrations.
+3. Interact with form fields, media controls, and tables to see how different HTML elements behave.
+
 ## License
 This project is licensed under the MIT License – see [LICENSE.md](LICENSE.md) for details.
 
